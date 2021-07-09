@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qora dev blogi</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<header>
+    <h1>
+        <a href="{% url 'home' %}">Sariq dev blogi</a>
+    </h1>
+    <div>
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</header>
+</body>
+</html>
